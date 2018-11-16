@@ -1,20 +1,76 @@
-<div class="profile">
-  <mat-card>
-    <div [@imageAnimation]='state' (click)="animateImage()" class="avatar"><img [src]="fullImagePath"></div>
-
-    <mat-card-header>
-      <mat-card-title><h3>{{profileTitle}}</h3></mat-card-title>
-      <mat-card-title><h4>{{userEmail()}}</h4>
-        <mat-card-subtitle>{{displayName}}</mat-card-subtitle>
-      </mat-card-title>
-    </mat-card-header>
-
-    <hr>
-    
-    <mat-card-subtitle>{{bio}}</mat-card-subtitle>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="left" style="padding-top:20px;">
+    <div fxFlex="30%">
+        <mat-card>
+            <div [@imageAnimation]='state' (click)="animateImage()" class="avatar"><img [src]="fullImagePath"></div>
         
-      <mat-card-actions class="button">
-          <button mat-raised-button class="primary" (click)="onPasswordReset()">Reset my password</button>
-      </mat-card-actions> 
-  </mat-card>
+            <mat-card-header>
+              <mat-card-title><h3>{{profileTitle}}</h3></mat-card-title>
+              <mat-card-title><h4>{{userEmail()}}</h4>
+                <mat-card-subtitle>{{displayName}}</mat-card-subtitle>
+              </mat-card-title>
+            </mat-card-header>
+        
+            <hr>
+            
+            <mat-card-subtitle>{{bio}}</mat-card-subtitle>
+                
+              <mat-card-actions class="button">
+                  <button mat-raised-button class="primary" (click)="onPasswordReset()">Reset my password</button>
+              </mat-card-actions> 
+          </mat-card>
+    </div>
+    <div fxFlex="40%">
+        <mat-card style="font-size:10px;">
+            <mat-card-header>                            
+                <mat-card-subtitle>Profile</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>   
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item><mat-card-subtitle>Role : Player,Band,Komunitas,Event Orginzer</mat-card-subtitle></mat-list-item>
+                    
+                    <mat-list-item><mat-card-subtitle>Interested :  Dangdut Country, Reggae, Ska</mat-card-subtitle></mat-list-item>
+                    
+                    <mat-list-item><mat-card-subtitle>Birthdate : 4 Maret 1991</mat-card-subtitle></mat-list-item>
+                    
+                    <mat-list-item><mat-card-subtitle>Job : Musisi</mat-card-subtitle></mat-list-item>
+                    
+                    <mat-list-item><mat-card-subtitle>Gear : Yamaha Guitar TY20</mat-card-subtitle></mat-list-item>
+                    
+                    <mat-list-item><mat-card-subtitle>Bio : "Im musician"</mat-card-subtitle></mat-list-item>
+                  </mat-list>                  
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+    <div fxFlex="30%">
+        <mat-card>
+            <mat-card-header>                            
+                <mat-card-subtitle>Video &amp; Audio</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>  
+
+        </mat-card>
+    </div>
+</div>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="left" style="padding-top:20px;">
+    <div fxFlex="100%">
+        <mat-card class="example-card">
+            <mat-card-header>                            
+              <mat-card-subtitle>Demo</mat-card-subtitle>
+            </mat-card-header>           
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+          
+    </div>
 </div>

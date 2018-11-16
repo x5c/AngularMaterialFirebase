@@ -2,9 +2,9 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule,
-         MatToolbarModule, MatCardModule, MatDialogModule } from '@angular/material';
+         MatToolbarModule, MatCardModule, MatDialogModule,MatListModule,MatDividerModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 // Components
 import { ProfileComponent } from './profile.component';
 import { ProfileSettingsComponent } from './profile-settings.component';
@@ -17,8 +17,9 @@ import { ProfileSettingsComponent } from './profile-settings.component';
   imports: [
     CommonModule,
     MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule,
-    MatToolbarModule, MatCardModule, MatDialogModule,
-    FormsModule
+    MatToolbarModule, MatCardModule, MatDialogModule,MatListModule,MatDividerModule,
+    FormsModule,
+    FlexLayoutModule 
   ],
   exports: [
     ProfileComponent,

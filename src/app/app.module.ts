@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule, MatSnackBarModule,
          MatToolbarModule, MatDialogModule, MatSidenavModule, MatNativeDateModule,
-         MatCardModule, MatTabsModule, MatIconModule } from '@angular/material';
+         MatCardModule, MatTabsModule, MatIconModule, MatListModule,MatDividerModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Modules
 import { MessagesModule } from './components/messages/messages.module';
@@ -16,6 +17,7 @@ import { AuthModule } from './components/auth/auth.module';
 import { BackgroundsModule } from './components/backgrounds/backgrounds.module';
 import { ProfileModule } from './components/profile/profile.module';
 import { MiscModule } from './components/misc/misc.module';
+
 
 // Shared
 import {
@@ -57,7 +59,7 @@ import { EmailMeComponent } from './components/email-me/email-me.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule, MatSnackBarModule,
-    MatToolbarModule, MatDialogModule, MatSidenavModule, MatNativeDateModule,
+    MatToolbarModule, MatDialogModule, MatSidenavModule, MatNativeDateModule,MatListModule,MatDividerModule,
     MatCardModule, MatTabsModule, MatIconModule,
     FormsModule,
     ReactiveFormsModule,
@@ -69,7 +71,8 @@ import { EmailMeComponent } from './components/email-me/email-me.component';
     AuthModule,
     BackgroundsModule,
     ProfileModule,
-    MiscModule
+    MiscModule,
+    FlexLayoutModule 
   ],
   providers: [
     UserService,
